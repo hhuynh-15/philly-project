@@ -9,6 +9,12 @@ body {
 }
 .grid {
   display: grid;
+  grid-gap: 10px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
 }
 header {
@@ -58,9 +64,36 @@ p a {
   color: whitesmoke;
   font-weight: 600;
 }
+main {
+  background-color: whitesmoke;
+}
+main h2 {
+  color: #241d3f;
+  line-height: 1;
+  font-size: 26px;
+  letter-spacing: 0.75px;
+  margin-top: 8px;
+}
+main h3 {
+  color: #241d3f;
+  line-height: 1;
+  opacity: 0.45;
+  letter-spacing: 2px;
+  font-size: 17px;
+}
+main p {
+  color: #241d3f;
+  line-height: 25px;
+  font-size: 18px;
+  letter-spacing: 1.25px;
+}
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
+}
+.picture {
+  max-width: 80%;
 }
 footer h3 {
   font-size: 18px;
@@ -76,7 +109,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 48px 0;
+  padding: 48px 40px;
 }
 footer p {
   font-size: 15.5px;
@@ -119,5 +152,15 @@ footer a {
   header a {
     font-size: 7.5px;
     padding: 15px 18px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  section {
+    padding: 30px;
+  }
+  .mural-img {
+    display: none;
   }
 }
