@@ -105,10 +105,25 @@ section {
 .grid-three-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8px;
+}
+.grid-three-columns img {
+  width: 85%;
+  aspect-ratio: 0.8/1;
+}
+.img-margin {
+  margin-top: 25px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 .card {
   background: white;
   margin: 30px 0;
+}
+.card-header.grid {
+  grid-gap: 0;
 }
 .card-body {
   padding: 30px;
@@ -210,5 +225,19 @@ footer a {
   }
   .mural-img {
     display: none;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
+  }
+  .img-margin {
+    display: block;
+    margin: 10px auto;
+  }
+  .image-margin {
+    display: block;
+    margin: 10px auto;
   }
 }
